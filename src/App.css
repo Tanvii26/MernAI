@@ -36,3 +36,92 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+.body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 50px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+}
+label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+input {
+  width: 90%;
+  max-width: 500px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1f0652;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.grid-container {
+  width: 95vw;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.expert-card {
+  width: 45%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.expert-card h3 {
+  margin-top: 0;
+}
+
+.candidate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.candidate-card {
+  background-color: #e9ecef;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.candidate-card strong {
+  display: block;
+}
